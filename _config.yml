@@ -76,7 +76,7 @@ defaults:
 # 5. Social Media Accounts
 email               : "akiritsu@outlook.com" 
 linkedin            : 
-github              : "https://github.com/akiritsu/pRoJEct-NeGYa" 
+github              : "/akiritsu/pRoJEct-NeGYa" 
 gitlab              : 
 website             : "akiritsu.github.io/pRoJEct-NeGYa/"
 twitter             : "just-test"
