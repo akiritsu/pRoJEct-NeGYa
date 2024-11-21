@@ -99,7 +99,7 @@ sass:
 
 # User defined paths
 # When inserting images, could use "{{site.img}}/path/to/image.png" instead
-img:                : /images      
+img                : /images      
 
 # 7. Plugins
 

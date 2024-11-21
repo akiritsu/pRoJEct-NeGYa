@@ -30,7 +30,7 @@ permalink: /
                  ||:  .|||_|;|_|;|_|;|_|;|_|;||:.  |                  
                  ||:   ||,    .     .      . ||:  .|                  
                  ||: . ||  .   .     .   ,   ||:   |       \,/        
-                 ||:   ||:  ,  <u> [<a href="/">404</a>] </u>   .   ||: , |            /`\   
+                 ||:   ||:  ,  <u> [<a href="/">Hi!</a>] </u>   .   ||: , |            /`\   
                  ||:   || .   /+++++++\    . ||:   |                  
                  ||:   ||.    |+++++++| .    ||: . |                  
  (")          __ ||: . ||: ,  |+++++++|.  . _||_   |                  
@@ -75,13 +75,13 @@ for i in range(n):
 
 [Download ZIP files](https://codeload.github.com/akiritsu/pRoJEct-NeGYa/zip/master)
 
-[中文自述及使用教程](https://akiritsu.github.io/pRoJEct-NeGYa/readme-zhcn/)
-
 ## More Samples
 
 ### Font style and link
 
 normal **bold** _italic_ ~~strikethrough~~ `keyword` [Link to Google](www.google.com)
+
+> Here's blockquote texts. Here's blockquote texts. Here's blockquote texts. Here's blockquote texts. Here's blockquote texts. Here's blockquote texts. Here's blockquote texts. Here's blockquote texts. Here's blockquote texts. Here's blockquote texts. Here's blockquote texts. Here's blockquote texts. Here's blockquote texts. Here's blockquote texts. Here's blockquote texts. Here's blockquote texts. Here's blockquote texts. Here's blockquote texts. 
 
 ### List
 
