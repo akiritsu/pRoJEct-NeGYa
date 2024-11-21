@@ -14,9 +14,6 @@ permalink: /
 
 # PROJECT NeGYa - HACKER-STYLE PERSONAL HOMEPAGE
 
-<br>
-
-
 <div class="ascii_art"><pre>
                                   |>>>                                
                                   |                                   
@@ -72,6 +69,8 @@ for i in range(n):
 ## Download and Documentation
 
 [**pRoJEct NeGYa README (Github)**](https://github.com/akiritsu/pRoJEct-NeGYa)
+
+[**pRoJEct NeGYa README (Github)**](https://github.com/akiritsu/pRoJEct-NeGYa/readme-zhcn/)
 
 [Download ZIP files](https://codeload.github.com/akiritsu/pRoJEct-NeGYa/zip/master)
 
