@@ -1,0 +1,97 @@
+// normal colors
+$black-1:    #000000;
+$black-2:    #181111;
+$black-3:    #011638;
+$black-4:    #2E294E;
+$red-1:      #bd1a1a;
+$red-2:      #f9320c;
+$green-1:    #0fca1c;
+$green-2:    #75D701;
+$green-3:    #7cfa7c;
+$brown-1:    #754F44;
+$orange-1:   #e97f02;
+$orange-2:   #f6c113;
+$yellow-1:   #f8ca00;
+$yellow-2:   #d0d00f;
+$blue-1:     #2a2df6;
+$cyan-1:     #4ef9ff;
+$cyan-2:     #a5dff9;
+$magenta-1 : #cf46cf;
+$magenta-2:  #f349eb;
+$pink-1:     #fab1ce;
+$white-1:    #d2cccc;
+$white-2:    #FFFFF3;
+$purple-1:   #9639fa;
+$purple-2:   #A593E0;
+
+// global variables
+$color-primary: $green-1;
+$color-secondary: $orange-1;
+$color-warning: $red-1;
+$color-bg: $black-2;
+$color-postbg: $black-1;
+$color-link-hover: $orange-1;
+$color-index-link: $red-1;
+$image-background: none;
+
+$article-text: $green-1;
+$article-blockquote: $white-1;
+$article-bold:  $yellow-1;
+$article-link: $blue-1;
+$article-italic: $green-3;
+$article-keyword: $red-1;
+
+// font size
+$font-size-h1: 21px;
+$font-size-h2: 19px;
+$font-size-h3: 19px;
+$font-size-h4: 19px;
+$font-size-h5: 18px;
+$font-size-h6: 17px;
+$font-bigger: 16px;
+$font-size-primary: 15px;
+$font-smaller: 14px;
+$font-tiny: 12.8px;
+$font-micro: 10.5px;
+$blk-duration: 1.2s;
+$blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
+
+// layout reset
+$header-height: 37px;
+$header-btn-icon-size: 17px;
+$header-btn-text-size: $header-btn-icon-size * 0.95;
+$toc-position: $header-height + 1px;
+$footer-icon-size: 14px;
+$footer-text-size: $footer-icon-size * 0.9;
+$collection-list-header-size: 30px;
+$global-section-margin: 0.30em;
+
+// standard border
+$thick-border: 2.1px solid $color-primary;
+$secondary-border: 1.35px solid rgba($color-primary, 0.87);
+$medium-border: 0.95px solid rgba($color-primary, 0.83);
+$thin-border: 0.5px solid rgba($color-primary, 0.6);
+$dotted-border: 0.7px dotted rgba($color-primary, 0.87);
+
+// syntax highlight
+$code-primary:     $color-primary;
+$comment:          $color-secondary;
+$error:            $color-warning;
+$error:            $color-warning;
+$keyword:          #66d4ff;
+$type:             #c3e919;
+$variable:         #9648fa;
+$number:           #4ef9ff;
+$string:           #ad7f7f;
+$punctuation:      #549ef3;
+$namespace:        #8a076d;
+$class:            $orange-1;
+$built-in:         #be273b;
+$global:           #52c96c;
+$code-background:  #131010;
+$error-background: #250f0f;
+
+// cursor
+$cursor-green-auto:     url(/src/assets/cursor/cursor-green-auto.png), auto;
+$cursor-green-pointer:  url(/src/assets/cursor/cursor-green-pointer.png), pointer;
+$cursor-green-text:  url(/src/assets/cursor/cursor-green-text.png), auto;

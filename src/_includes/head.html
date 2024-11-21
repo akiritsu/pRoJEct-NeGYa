@@ -1,0 +1,47 @@
+<head>
+    <meta charset="utf-8"/>
+    <!-- multi-device width -->
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <!-- site description -->
+    {% if page.excerpt %}
+        {% assign desc = page.excerpt | strip_html |
+  strip_newlines | truncate: 160 %}
+    {% else %}
+        {% assign desc = site.description
+  %}
+    {% endif %}
+    <meta content="{{ desc }}" name="description"/>
+    <!-- referer for 3rd-part images-->
+    <meta content="no-referrer" name="referrer"/>
+    <!-- title -->
+    <title>
+        {% if page.title %}
+            {{ page.title | escape }}
+        {% else %}
+            {{ site.title |
+    escape }}
+        {% endif %}
+    </title>
+    <!-- icon -->
+    <link href="{{site.url }}{{site.baseurl}}/src/assets/img/favocon.ico" rel="shortcut icon bookmark" type="image/x-icon"/>
+    <!-- global stylesheet -->
+    <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/src/assets/css/main.css" type="text/css"/>
+    <!-- global script -->
+    <script src="{{site.url}}{{site.baseurl}}/src/assets/js/main.js" async></script>
+    <!-- fontawesome < 4.7.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>    
+    <!-- fontawesome > 4.7.0 -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/{{site.fontawesome_version}}/css/all.min.css" type="text/css"/> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/{{site.fontawesome_version}}/css/svg-with-js.min.css" type="text/css"/> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/{{site.fontawesome_version}}/css/regular.min.css" type="text/css"/> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/{{site.fontawesome_version}}/css/solid.min.css" type="text/css"/> -->
+    <!-- mathjax < 2.8 -->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!-- mathjax > 2.8 -->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/{{site.mathjax_version}}/es5/core.min.js"></script>
+    <!-- mermaid -->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/{{site.mermaid_version}}/mermaid.min.js"></script>
+    <script async src="{{site.url}}{{site.baseurl}}/src/assets/js/init-mermaid.js"></script>
+    <!-- The tag `feed_meta` is unrecognized by Github Pages -->
+    <!--  -->
+</head>

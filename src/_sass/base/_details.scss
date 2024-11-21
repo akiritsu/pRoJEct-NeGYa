@@ -1,0 +1,25 @@
+// When using kramdown, which only partially supports HTML5-->
+// <details>
+// <summary><strong>Table of Contents</strong> (Click to expand)</summary>
+// <div markdown=1>
+// </div></details><br>
+
+details summary:hover {
+  cursor: pointer;
+}
+
+// links in <details>
+details a{
+    padding: 0;
+    font-size: 100%;
+    color: $color-primary;
+    text-decoration: none;
+    //text-decoration: underline solid $article-link;
+  }
+details a:hover {
+  font-size: 100%;
+  color: $color-link-hover;
+  font-weight: auto;
+  text-decoration: none;
+  cursor: pointer;
+}

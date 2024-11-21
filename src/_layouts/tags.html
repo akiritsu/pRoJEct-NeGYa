@@ -1,0 +1,98 @@
+---
+layout: default
+---
+
+<h1>List Articles with Tag {{page.tag_to_show}}</h1>
+
+<table class="link_table">
+    <tr>
+        <td>
+            <ul>
+                {% if page.collections_to_show %}
+                    {% for col_in_order in page.collections_to_show %}
+                        {% for collection in site.collections %}
+                            {% if collection.label == col_in_order %}
+                                <h5 class="h_collection_label">
+                                    {% if collection.alias %}
+                                        {{collection.alias}}
+                                    {% else %}
+                                        {{collection.label}}
+                                    {% endif %}
+                                <hr>
+                                </h5>
+                                {% for post in collection.docs %}
+                                    {% if post.publish != false %}
+                                        {% if post.tags != false %}
+                                            {% for tag in post.tags %}
+                                                {% if tag == page.tag_to_show %}
+                                                    <li>
+                                                        <a class="a_title" href="{{site.url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+                                                    </li>
+                                                {% endif %}
+                                            {% endfor %}
+                                        {% endif %}
+                                    {% endif %}
+                                {% endfor %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                {% else %}
+                    {% if site.collection_order %}
+                        {% for col_in_order in site.collection_order %}
+                            {% for collection in site.collections %}
+                                {% if collection.label == col_in_order %}
+                                    <h5 class="h_collection_label">
+                                        {% if collection.alias %}
+                                            {{collection.alias}}
+                                        {% else %}
+                                            {{collection.label}}
+                                        {% endif %}
+                                    <hr>
+                                    </h5>
+                                    {% for post in collection.docs %}
+                                        {% if post.publish != false %}
+                                            {% if post.tags != false %}
+                                                {% for tag in post.tags %}
+                                                    {% if tag == page.tag_to_show %}
+                                                        <li>
+                                                            <a class="a_title" href="{{site.url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+                                                        </li>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endif %}
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    {% else %}
+                        {% for collection in site.collections %}
+                            <p class="h_collection_label">
+                                {% if collection.alias %}
+                                    {{collection.alias}}
+                                {% else %}
+                                    {{collection.label}}
+                                {% endif %}
+                            <hr>
+                            </p>
+                            {% for post in collection.docs %}
+                                {% if post.publish != false %}
+                                    {% if post.tags != false %}
+                                        {% for tag in post.tags %}
+                                            {% if tag == page.tag_to_show %}
+                                                <li>
+                                                    <a class="a_title" href="{{site.url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+                                                </li>
+                                            {% endif %}
+                                        {% endfor %}
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                            <br/>
+                        {% endfor %}
+                    {% endif %}
+                {% endif %}
+            </ul>
+        </td>
+    </tr>
+</table>

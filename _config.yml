@@ -1,0 +1,129 @@
+# 1. Site Settings
+title               : pRoJEct-NeGYa
+owner               : "DeerRIDER"
+url                 : "https://akiritsu.github.io"
+baseurl             : "/pRoJEct-NeGYa"
+## baseurl            : ""
+permalink           : /:title/
+description         : "A hacker-style note-keeping website template."
+markdown            : kramdown
+statement           : "Designed by DeerRIDER, All Rights Reserved"
+# bgtext              : "01"
+bgtext              : "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+
+# 2. Collections
+collections:
+  math:   
+    output          : true
+    permalink       : /:collection/:title/
+    sort_by         : date
+    alias           : "Mathematics"
+  portfolio:
+    output          : true
+    permalink       : /:collection/:title/
+    order: # specify post order manually
+      - portfolio3.md
+      - portfolio2.md
+      - portfolio1.md
+  album:
+    output          : true
+    permalink       : /:collection/:title/
+    sort_by         : date
+  physics:
+    output          : true
+    permalink       : /:collection/:title/
+  biology:
+    output          : true
+    permalink       : /:collection/:title/
+  finance:
+    output          : true
+    permalink       : /:collection/:title/
+  my_notes:
+    output          : true
+    permalink       : /:collection/:title/
+    # An alias should be given or the UNDERSCORE will appeared 
+    alias           : "My Notes"
+  posts:
+    output          : true
+
+# 3. Comment settings（disqus.com）
+disqus_username     : akiritsu
+
+# 4. Default page configuration
+defaults:
+  -    
+    scope:
+      path          : ""  # an empty string here means all files in the project
+    values:
+      layout              : "post"      # which layout to use by default
+      publish             : true        # whether to show by default      
+      btn_text            : true        # whether show button text by default
+      collection_list     : true        # whether show archive button by default
+      home_btn            : true        # whether show home by default
+      maximize            : true        # whether show maximize button by default
+      encrypted_text      : false       # whether use encrytion function by default
+      toc                 : true        # whether show table of content by default
+      toc_level           : 3           # the toc depth by default
+      author              :             # author name by default
+      show_date           : false       # whether show date message by default
+      category            :             # category by default
+      post_list           : false       # whether show list of post by default      
+      comment             : false
+      footer              : false       # whether show footer by default
+      highlight           : false
+
+# 5. Social Media Accounts
+email               : "akiritsu@outlook.com" 
+linkedin            : 
+github              : "https://github.com/akiritsu/pRoJEct-NeGYa" 
+gitlab              : 
+website             : "akiritsu.github.io/pRoJEct-NeGYa/"
+twitter             : "just-test"
+facebook            : "just-test"
+instagram           : 
+youtube             : "just-test"
+steam               : "just-test"
+weibo               :
+
+# 6. Where things are
+source              : .
+destination         : ./_site
+collections_dir     : collections
+plugins_dir         : src/_plugins  # takes an array of strings and loads plugins in that order
+layouts_dir         : src/_layouts
+data_dir            : src/_data
+includes_dir        : src/_includes
+sass:
+  sass_dir          : src/_sass
+
+# User defined paths
+# When inserting images, could use "{{site.img}}/path/to/image.png" instead
+img:                : /images      
+
+# 7. Plugins
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+ # - jekyll-seo-tag
+  - jekyll-mermaid
+
+# 8. JS version
+# Search Plugins on: https://cdnjs.com/
+# This is functioned in ./src/_includes/head.html
+mathjax_version     : "3.2.2"
+mermaid_version     : "11.3.0"
+fontawesome_version : "4.6.0"
+
+# 9. kramdown settings
+kramdown:
+#  parse_block_html: true
+
+# 10. Others
+# Cross-Origin Resource Sharing header
+webrick:
+  headers:
+   Access-Control-Allow-Origin: "*"
+
+

@@ -1,0 +1,58 @@
+
+.index_title{
+    font: 30px Monospace;
+}
+
+.ascii_art{
+    font: 19px Consolas, Source Code Pro, Monospace, Georgia, sans-serif;
+    text-align: center;
+    line-height: 122%;
+    a {
+      color: $color-index-link;
+    }
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+    .index_title{
+        font: 26px Monospace;
+    }
+    .ascii_art {
+       font: 17px Consolas, Source Code Pro, Monospace, Georgia, sans-serif;
+       text-align: center;
+       line-height: 140%;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+    .index_title{
+        font: 22px Monospace;
+    }
+    .ascii_art {
+       font: 16px Consolas, Source Code Pro, Monospace, Georgia, sans-serif;
+       text-align: center;
+       line-height: 140%;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 400px) {
+    .index_title{
+        font: 20px Monospace;
+    }
+    .ascii_art {
+       font: 11.5px Consolas, Source Code Pro, Monospace, Georgia, sans-serif;
+       text-align: center;
+       line-height: 140%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .index_title{
+        font: 18px Monospace;
+    }
+    .ascii_art {
+       font: 9px Consolas, Source Code Pro, Monospace, Georgia, sans-serif;
+       text-align: center;
+       line-height: 140%;
+    }
+}

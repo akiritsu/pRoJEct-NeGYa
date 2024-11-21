@@ -1,0 +1,20 @@
+.link_table {
+  line-height: 150%;
+  ul {
+    list-style: none;
+  }
+  a {
+      padding: 0;
+      font-size: 100%;
+      color: $color-primary;
+      text-decoration: none;
+      //text-decoration: underline solid $article-link;
+    }
+  a:hover {
+    font-size: 100%;
+    color: $color-link-hover;
+    font-weight: auto;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

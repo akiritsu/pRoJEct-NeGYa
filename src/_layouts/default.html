@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="page">
+    {% include background.html %}
+    {% include collection_list.html %}
+    <div class="container" id="ctner">
+       {% include header.html %}
+      <div class="div_article" id="div_atcl">
+        <div class="hook" id="top_hook"></div>
+        <article
+          id="main_atcl"
+          itemscope
+          itemtype="http://schema.org/BlogPosting"
+        >
+          {{content}} {% include post_list.html %} {% include comment.html %}
+        </article>
+        {% if page.footer != false %} {% include footer.html %} {% endif %}
+      </div>
+    </div>
+  </body>
+</html>
